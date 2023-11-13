@@ -5,6 +5,13 @@ import { AppContext } from '../context/AppContext';
 const ExpenseList = () => {
     const { expenses } = useContext(AppContext);
 
+
+const styles = stylesheet.create(){
+    button: {
+        border-radius: 5;
+        color: green;
+    };
+}    
     return (
         <table className='table'>
               <thead className="thead-light">
